@@ -3,160 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería "El Romano"</title>
-    <link rel="stylesheet" href="./resources/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Diego Chuchón Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo_solo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Header y Barra de navegación de la Página -->
-    <header>
-        <nav class="minav" id="barra">
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/DIEGO CH/</h1>
+                    <nav id="nav" class="">
+                        <ul class="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi"  onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios"  onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio"  onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto"  onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
 
-                <!-- Icono de navegación -->
-                <div class="primero">
-                    <a><i class="fa-solid fa-bars"></i></a>
+                    <!-- iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Iconos de las redes sociales -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
-                
-                <!-- Icono de la Empresa -->
-                <div class="segundo">
-                    <a><img src="./images/romanillo.png" width="130px"></a>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Diego Chuchón</span>, Desarrollador Web Frontend</h2>
+                <p class="descripcion">Apasionado por la programación, me gusta programar en lenguajes como
+                    Javascript, PHP y Python.
+                </p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/foto-diego.png" alt="foto desarrollador diego">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Diego Chuchón</span></h2>
+            <h3>Desarrollador Web Frontend</h3>
+            <p>Deseo cosolidarme como programador web Fullstack, más adelante escalar en Ingeniería
+            de Software y aprender las tecnologías más recientes, soy proactivo y me gusta ayudar a los demás.
+            </p>
+            <p>Puedes descargar mi Currículum en el siguiente enlace:</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae eius quidem accusantium optio, architecto quasi
+                    ratione dolorem voluptatibus facilis alias odit, ea 
+                    quod veritatis delectus eaque quos veniam molestiae.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 1</h4>
+                    <p>Diseño Web</p>
                 </div>
-          
-                <!-- Barra de buscador -->
-                <div class="tercero">
-                    <input class="input_search" type="text" placeholder="Buscar producto">
-                    <button class="btn_lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 2</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 3</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 4</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 5</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/proyecto_6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto 6</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame acá</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
                 </div>
 
-                <!-- Botón de acceso de Usuario -->
-                <div class="cuarto">
-                    <a href="contacto.html" target="_blank"><i class="fa-regular fa-user"></i> Contacto </a>
-                    
-                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
 
-                <!-- Botón para Hacer pedidos -->
-                <div class="quinto">
-                    <a><i class="fa-solid fa-truck"></i> Mis Pedidos</a>
-                </div>
-            
-                <!-- botón para ver el carrito -->
-                <div class="sexto">
-                    <a><i class="fa-solid fa-cart-shopping"></i>Carrito</a>
-                </div>     
-        </nav>
-        <hr>
-        <!-- titulo de la Página -->
-        <header class="title_name" div="titulo">
-            <div class="title_name_first">
-                <h1><b>LIBRERÍA EL ROMANO</b></h1>
-            </div>  
-        </header>
-    </header>
-    <hr> <!-- Línea Vertical usada como separador -->
-
-    <!-- Contenido Principal de la página -->
-    <main id="cuerpo">
-        <article>
-            <h2>PRINCIPALES LIBROS</h2>
-        </article>
-
-        <!-- Hay tres Contenedores con 4 imágenes cada Una -->
-        <section class="container">
-
-            <!-- Los elementos con clase card son los elementos como opciones de
-            venta que se muestran en la página -->
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h2>Volver a Empezar</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-2"></div>
-                <h2>Hábitos Atómicos</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-3"></div>
-                <h2>El Diario de los Hábitos</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-4"></div>
-                <h2>Volver a Empezar</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-        </section>
-
-        <section class="container">
-
-            <div class="card">
-                <div class="card-image card-5"></div>
-                <h2>El Diario de Ana Frank</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-6"></div>
-                <h2>Con Luz Propia</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-7"></div>
-                <h2>La Sombra</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-8"></div>
-                <h2>Magia de tu Casa</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-        </section>
-
-        <section class="container">
-
-            <div class="card">
-                <div class="card-image card-9"></div>
-                <h2>La Odisea de Juan Bautista</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-10"></div>
-                <h2>El Pupitre de Al Lado</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-11"></div>
-                <h2>Jujutso Kaisen</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-            <div class="card">
-                <div class="card-image card-12"></div>
-                <h2>Spy Family</h2>
-                <button>Agregar al Carrito</button>
-            </div>
-
-        </section>
-    </main>
-    <hr> <!-- Línea Vertical usada como separador -->
-
-    <!-- Parte Final de la Página -->
-    <footer id="Pie">
-        <h3>Desarrollado por Diego Chuchón 2023</h3>
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </footer>
+
+    <script src="./script.js">
+
+    </script>
 </body>
 </html>
