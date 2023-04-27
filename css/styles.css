@@ -216,8 +216,7 @@ html{
 #servicios{
     padding: 100px 25px;
     text-align: center;
-    background-color: #f3f3f3;
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16,.8)), url("img/fondo-skills.jpg");
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16,.8));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
