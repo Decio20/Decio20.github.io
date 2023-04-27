@@ -216,7 +216,7 @@ html{
 #servicios{
     padding: 100px 25px;
     text-align: center;
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16,.8));
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16,.8)), url("../img/tec_skills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
